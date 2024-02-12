@@ -1,44 +1,54 @@
-form{
+form {
     display: flex;
     flex-direction: column;
 }
-
-#lenom, #leprenom, #msgn, #langue{
+ 
+#lenom, #leprenom, #lalangue, #lemessage {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
 }
-
+ 
 #legenre, #lergpd {
     display: flex;
     flex-direction: row;
     margin-bottom: 1em;
 }
-
-#legenre>label{
+ 
+#legenre>label {
     margin-right: 2em;
 }
+ 
 textarea {
     resize: none;
 }
-
-@media screen and (min-width:640px) and (max-width:1200px){
-    #lenom{
+ 
+@media screen and (min-width:640px) and (max-width:1200px) {
+    #lenom, #leprenom, #legenre {
         flex-direction: row;
         flex-wrap: nowrap;
-        width:90vw;
-        
+        width:95vw;
     }
-    #lenom label, #leprenom label, #legenre label {
-        width:15vw;
+    #lenom label, #leprenom label {
+        width:100px;
+        flex: 1 0 100px;
     }
     #nom, #prenom {
         width:85vw;
     }
-
+ 
+    fieldset {
+        display: flex;
+    }
+ 
+    #legenre label {
+        width:10vw;
+    }
+   
 }
-
+ 
 @media screen and (min-width:1200px) {
-    
+ 
+   
 }
     
