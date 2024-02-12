@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exo0502.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire de contact</h1>
+    <div>
+    <form action="/ma-page-de-traitement" method="post">
+        
+            <div><label for="name">Nom&nbsp;:</label>
+            <input type="text" id="lenom" name="user_name" /></div>
+          
+            <div><label for="prenom">Prénom&nbsp;:</label>
+            <input type="text" id="leprenom" name="user_prenom" /></div>
+
+        </br>
+        <div id="Legenre"></div>
+        <label for="">Genre</label>
+        <div>
+            <input type="radio" id="legenre" name="sexe" value="H" checked /><label for="homme">Homme</label>
+        </div>
+        <div>
+            <input type="radio" id="legenre" name="sexef" value="F" /><label for="femme">Femme</label>
+        </div>
+        </br>
+         
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" cols="30" rows="10" maxlength="1024"></textarea>
+          
+        </br>
+        <label for="langue">Langue</label>
+ 
+        <select name="langue" id="langue">
+           
+            <option value="FR">Français</option>
+            <option value="NL">Néerlandais</option>
+            <option value="EN">Anglais</option>
+           
+        </select>
+       
+        </br>
+        <fieldset>
+            <legend>Stockage des données RGPD:</legend>
+         
+            <div>
+              <input type="checkbox" id="scales" name="scales" checked />
+              <label for="Valid">Valider</label>
+            </div>
+         
+          </fieldset>
+        </br>
+       
+          <input type="submit" value="Envoyer le formulaire" />
+        </br>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#lenom, #leprenom, #msgn, #langue{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#legenre>label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+textarea {
+    resize: none;
+}
