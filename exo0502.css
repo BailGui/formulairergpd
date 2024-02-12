@@ -9,12 +9,36 @@ form{
     margin-bottom: 1em;
 }
 
-#legenre>label {
+#legenre, #lergpd {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
+#legenre>label{
+    margin-right: 2em;
+}
 textarea {
     resize: none;
 }
+
+@media screen and (min-width:640px) and (max-width:1200px){
+    #lenom{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width:90vw;
+        
+    }
+    #lenom label, #leprenom label, #legenre label {
+        width:15vw;
+    }
+    #nom, #prenom {
+        width:85vw;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    
+}
+    
